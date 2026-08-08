@@ -1,4 +1,6 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
+This is BibTeX, Version 0.99e (TeX Live 2026)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
 A level-1 auxiliary file: chapters/titlepage.aux
 A level-1 auxiliary file: chapters/vorwort.aux
 A level-1 auxiliary file: chapters/zusammenfassung.aux
@@ -9,3 +11,44 @@ A level-1 auxiliary file: chapters/zumschluss.aux
 The style file: acm.bst
 A level-1 auxiliary file: chapters/eigenstaendigkeitserklaerung.aux
 Database file #1: literature/literature.bib
+You've used 6 entries,
+            2253 wiz_defined-function locations,
+            584 strings with 5192 characters,
+and the built_in function-call counts, 1686 in all, are:
+= -- 164
+> -- 77
+< -- 0
++ -- 32
+- -- 26
+* -- 133
+:= -- 298
+add.period$ -- 20
+call.type$ -- 6
+change.case$ -- 30
+chr.to.int$ -- 0
+cite$ -- 6
+duplicate$ -- 59
+empty$ -- 130
+format.name$ -- 26
+if$ -- 335
+int.to.chr$ -- 0
+int.to.str$ -- 6
+missing$ -- 6
+newline$ -- 36
+num.names$ -- 12
+pop$ -- 24
+preamble$ -- 2
+purify$ -- 25
+quote$ -- 0
+skip$ -- 32
+stack$ -- 0
+substring$ -- 74
+swap$ -- 13
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 22
+warning$ -- 0
+while$ -- 16
+width$ -- 7
+write$ -- 69
