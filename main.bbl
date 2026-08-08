@@ -1,0 +1,40 @@
+\newcommand{\Christoph}{Ch}
+\begin{thebibliography}{1}
+
+\bibitem{Lein2006}
+{\sc Leine, R.~I.}
+\newblock {\em On the stability of motion in non-smooth mechanical systems}.
+\newblock {Habilitation thesis}, ETH Zurich, Switzerland, 2006.
+
+\bibitem{Lein2003}
+{\sc Leine, R.~I., Glocker, {\Christoph}., and Van~Campen, D.~H.}
+\newblock Nonlinear dynamics and modeling of various wooden toys with impact
+  and friction.
+\newblock {\em Journal of Vibration and Control 9}, 1 (2003), 25--78.
+
+\bibitem{Lein2005}
+{\sc Leine, R.~I., Le~Saux, C., and Glocker, {\Christoph}.}
+\newblock Friction models for the rolling disk.
+\newblock {\em Proceedings of the ENOC 2005 Conference\/} (August 7-12 2005).
+\newblock {Eindhoven, CD-ROM}.
+
+\bibitem{Lein2004}
+{\sc Leine, R.~I., and Nijmeijer, H.}
+\newblock {\em Dynamics and Bifurcations of Non-Smooth Mechanical Systems},
+  vol.~18 of {\em Lecture Notes in Applied and Computational Mechanics}.
+\newblock Springer Verlag, Berlin, 2004.
+
+\bibitem{Lein2002}
+{\sc Leine, R.~I., and Van~Campen, D.~H.}
+\newblock Discontinuous bifurcations of periodic solutions.
+\newblock {\em Mathematical and Computer Modelling 36}, 3 (2002), 259--273.
+
+\bibitem{Lein2007}
+{\sc Leine, R.~I., and van~de Wouw, N.}
+\newblock Stability properties of equilibrium sets of nonlinear mechanical
+  systems with dry friction and impact.
+\newblock {\em International Journal of Nonlinear Dynamics and Chaos in
+  Engineering Systems\/} (2007).
+\newblock online.
+
+\end{thebibliography}

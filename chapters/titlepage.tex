@@ -1,0 +1,54 @@
+% Platzieren des Unilogos und des Institutslogos
+\tikzexternaldisable
+\begin{tikzpicture}[remember picture, overlay]
+	\node [anchor=north west, shift={(24mm,-32mm)}] (label) 
+			at (current page.north west) 
+			{\includegraphics[width=60mm]{graphics/unilogo.eps}};
+	\node [anchor=north west, shift={(120mm,-33mm)}] (label) 
+			at (current page.north west) 
+			{\includegraphics[height=10mm]{graphics/logo_inm_deutsch.eps}};	
+\end{tikzpicture}	
+\tikzexternalenable
+
+\vspace*{20mm}
+
+% Serifenlose Schrift
+\sffamily
+
+
+\begin{center}
+    \LARGE
+    Masterarbeit\\
+    Sommersemester 2015
+\end{center}
+
+\vspace{15mm}
+
+\begin{center}
+    \Huge
+    \bfseries
+    Vorlage für studentische Arbeiten am Institut für Nichtlineare Mechanik
+\end{center}
+
+
+\vspace{15mm}
+
+\mdseries
+\LARGE
+\begin{center}
+  Simon R. Eugster \\
+  Tom Winandy
+\end{center}
+
+\vfill
+
+\large
+\noindent
+\begin{tabular}[b]{ll}
+  Betreuer:
+  & MSc T. Winandy \\
+  & Dr. S. R. Eugster\\
+  & Prof. Dr. R. I. Leine
+\end{tabular}
+\hfill November 2017
+

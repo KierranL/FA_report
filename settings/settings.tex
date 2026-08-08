@@ -1,0 +1,83 @@
+\documentclass[
+    12pt,
+    a4paper,
+    twoside,
+    openright, % Kapitel beginnen rechts
+    % draft
+]{report}
+
+% Schriftzeichen Encoder
+\usepackage[utf8]{inputenc}
+
+% Deutsch
+\usepackage[ngerman]{babel}
+
+% English
+%\usepackage[english]{babel}
+
+% Eigene Befehle
+\input{settings/commands}
+
+% Referenzen
+\usepackage{cite}
+
+% Mathematik
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage{bbm}        % Blackboard Schrift (Reelle Zahlen \mathbb{R})
+\usepackage{amsthm}     % Mathematische Umgebungen (Definitionen, Theoreme, ...)
+\usepackage{wasysym}    % Durchmesser Zeichen (\diameter)
+
+% Grafiken
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{tikz}
+\usepackage{pgfplots} % erstellen von Plots mit Latex
+\pgfplotsset{compat=1.12}
+\usetikzlibrary{external}
+\tikzexternalize[prefix=plots/]
+
+% Seitenlayout
+\usepackage{fancyhdr}
+\setlength{\headheight}{6mm}
+\setlength{\textheight}{210mm}
+\setlength{\textwidth}{140mm}
+\setlength{\oddsidemargin}{9.6mm}
+\setlength{\evensidemargin}{9.6mm}
+\setlength{\footskip}{10mm}
+\setlength{\paperwidth}{210mm}
+\setlength{\paperheight}{297mm}
+
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter.\ #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[RE]{\leftmark}
+\fancyhead[LO]{\rightmark}
+\fancyfoot[C]{}
+
+% Tabellen
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{rotating}
+
+% Entfernt Kopf- und Fußzeilen auf leeren Seiten
+\usepackage{emptypage}
+
+% Zeilenabstand in itemize Umgebung
+\newlength{\itemizeskip}
+\setlength{\itemizeskip}{0.2em}
+
+% Aufzählungszeichen
+\def\labelitemi{-}
+\def\labelitemii{$\diamond$}
+\def\labelitemiii{\textbullet}
+
+% Einheiten
+\usepackage[binary-units=true]{siunitx}
+
+% Dynamische Verknüpfungen
+% ! Dieses Packet muss als letztes eingebunden werden
+\usepackage[pdfborder={0 0 0}]{hyperref} 

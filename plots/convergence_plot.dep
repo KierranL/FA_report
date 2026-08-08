@@ -1,0 +1,1 @@
+plots/convergence_plot.pdf: plots/convergence_plot_data.dat

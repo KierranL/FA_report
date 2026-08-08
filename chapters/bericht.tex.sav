@@ -1,0 +1,121 @@
+\chapter{Der Bericht}\label{KapitelBericht}
+Der Bericht muß mit dem Textverarbeitungsprogramm \LaTeX~sowie mit den Dateien dieser Vorlage erstellt werden. Die \LaTeX-Vorlage stellt unter anderem die Schriftgrö{\ss}e (12pt), die Schriftarten und die Margen der Seite ein. Diese
+Einstellungen dürfen nicht geändert werden.
+
+\section{Arbeiten mit TeXnicCenter}
+Auf den Studentenrechnern ist standardmäßig der Editor TeXnicCenter installiert. Um die Arbeit komplikationsfrei zu kompilieren verwenden Sie das Ausgabeprofil \verb"pdflatex_sumatra.tco", welches im Ordner \verb"\tools" zu finden ist. Dieses kann in TeXnicCenter folgendermaßen importiert werden. Im Menü \verb"Ausgabe" den Menüpunkt \verb"Ausgabeprofile definieren" klicken. Wählen Sie \verb"Importieren" an, laden Sie das Ausgabeprofil \verb"pdflatex_sumatra.tco", deaktivieren Sie den Haken \verb"Verzeichnisangaben aus Pfaden entfernen" und schließen Sie mit dem Knopf \verb"Importieren" ab. Kompilieren Sie nun mit dem Ausgabeprofil \verb"LaTeX => PDF". Das Ausgabeprofil ermöglicht es Ihnen durch Drücken von \verb"F5" bzw.\ Doppelklicken im PDF zwischen dem Quelltext und der Ausgabe hin- und herzuspringen.
+
+\section{Sprache}
+In Absprache mit dem Hauptbetreuer kann der Bericht entweder in der englischen oder in der deutschen Sprache geschrieben werden. Die Spracheinstellung wird über den Befehl \verb"\usepackage[english]{babel}" in der Datei \verb"settings.tex" gesteuert.
+
+\section{Das Titelblatt}
+Auf dem Titelblatt müssen Typ der studentischen Arbeit (z.B.\ Masterarbeit), das Semester und die Betreuer angegeben werden. Die akademischen Titel werden in Kurzform verwendet (z.B.\ ``Prof.~Dr.'', ``Dr.'', ``Dipl.-Ing.'', ``MSc'', ``BSc''). Die ``cand.'' Titel (z.B.\ cand. mach.) gibt es nicht mehr und sind somit nicht zu verwenden.
+
+
+\section{Bilder}
+Graphische Darstellungen müssen als Vektorgraphiken erstellt werden. Hierfür steht Ihnen auf den Studentenrechnern CorelDRAW mit \LaTeX-Plugin zur Verfügung. 
+
+Mit einem geeigneten \LaTeX-Plugin lassen sich die Formeln direkt in CorelDRAW schreiben. Am robustesten ist diese Lösung wenn die Schriften, danach als Kurven gespeichert werden. Damit kann auch jemand ohne ein entsprechendes Plugin die Datei öffnen. Bei CorelDRAW X6 muss dafür der ``PDF - Adobe Portable Document Format''-Filter entfernt werden (Extras $\rightarrow$ Optionen $\rightarrow$ Global $\rightarrow$ Filter).
+
+
+
+Die Bilder müssen schwarz-weiß sein, oder höchstens Graustufen aufweisen (aufpassen beim Drucken!). Die Bilder dürfen in \LaTeX~nicht skaliert werden.
+
+Text oder Formeln in CorelDRAW Bilder können auf verschiedene Weisen gemacht werden:
+\begin{enumerate}
+ \item \textit{Die \LaTeX-Lösung.} Komplexe Formeln lassen sich mit \LaTeX~leicht erstellen. Eine mit \LaTeX~erstellte Postscript Seite, welche alle Formeln der Zeichnung enthält, kann als Postscript Interpreted in CorelDRAW importiert werden. Falls nötig müssen die Formeln noch auf die 12pt Schriftgrö{\ss}e skaliert werden. Bei CorelDRAW X6 muss dafür der ``PDF - Adobe Portable Document Format''-Filter entfernt werden (Extras $\rightarrow$ Optionen $\rightarrow$ Global $\rightarrow$ Filter).
+
+ \item \textit{Die \LaTeX-Plugin-Lösung.} 
+
+ \item \textit{Die reine CorelDRAW-Lösung.} Einfacher Text kann in CorelDRAW mit dem Text Tool erstellt werden. Man muss die Computer Modern Fonts verwenden, diese sind die \LaTeX-Fonts sehr ähnlich. Diese TrueType Fonts findet man im Verzeichnis \verb"Tex-Fonts" und sind über das Betriebsystem zu installieren.
+\end{enumerate}
+
+Beim Layout einer guten Zeichnung, zum Beispiel Abb.~\ref{wagenfig}, ist einiges zu beachten:
+
+\begin{figure}
+ \centering
+ \includegraphics{graphics/Wagen.eps}
+ \caption{Eine Aufgabe aus der Vorlesung Mechanik III.}
+ \label{wagenfig}
+\end{figure}
+
+\subsection*{Schrift}
+\begin{itemize}
+    \setlength\itemsep{\itemizeskip}
+    \item Grundgrösse 12pt
+    \item Indizes 8pt (für die reine CorelDRAW-Lösung)
+    \begin{itemize}
+        \item Grundlinie unterer: -2.6pt nach unten ( \^=33\%)
+        \item Grundlinie oberer: +6.3pt nach oben ( \^=66\%)
+    \end{itemize}
+    \item Zweiter Index 6pt (für die reine CorelDRAW-Lösung)
+    \item Font: Computer Modern ( \^=\LaTeX) (für die reine CorelDRAW-Lösung)
+    \item Vektoren, Matrizen: fett, gerade
+    \item Skalare, Punkte: normal, schräg
+\end{itemize}
+
+\subsection*{Linien}
+\begin{itemize}
+    \setlength\itemsep{\itemizeskip}
+\item Ganz dick 0.6 mm
+\item Dick 0.4 mm
+\item Dünn 0.2 mm
+\item Ganz dünn 0.1 mm
+\item Pfeile: schlank (Pfeilspitze 15$^\circ$, klein)
+\item Punkte (z.B.\ Schwerpunkt): $\diameter$ 1.2 mm schwarz
+\end{itemize}
+Man soll hauptsächlich \textit{Dick 0.4 mm} und \textit{Dünn 0.2 mm} verwenden.
+
+\subsection*{Mechanische Modelle}
+\begin{itemize}
+    \setlength\itemsep{\itemizeskip}
+\item Dick (0.4 mm): Körperkonturen, Kraftpfeile, Momentenpfeile
+
+\item Dünn (0.2 mm): Koordinatensysteme, Geometrieabmessungen, Schraffuren, Hilfslinien, Federn, Dämpfer
+
+\end{itemize}
+
+
+\subsection*{Berechnete Kurven}
+\begin{itemize}
+    \setlength\itemsep{\itemizeskip}
+\item Koordinatensysteme: 0.2 mm
+\item Zusätzliche Bema{\ss}ungen: 0.2 mm
+\item Einzelne Funktionen/Kurven: 0.4 mm
+\item Funktionenscharen: 0.2 mm, davon einzelne hervorgehobene 0.4 mm
+\item Koordinatengitter 0.1 mm (falls überhaupt)
+\end{itemize}
+
+\section{Grafiken}
+In \textsc{MatLab} erstellte Grafiken müssen als \verb".fig" \underline{und} \verb".eps" Datei gespeichert werden (keine Bitmaps oder JPEGs!). Die Bilder müssen schwarzweiß sein, da graue Kurven kaum erkennbar sind. Am besten erstellt man eine \textsc{MatLab} Skript-Datei, welche alle Bilder auf ein mal erzeugt. Die folgenden
+\textsc{MatLab}-Einstellungen sind nützlich:
+\begin{verbatim}
+ set(0,'DefaultTextFontName','Times');
+ set(0,'DefaultAxesFontName','Times');
+ set(0,'DefaultAxesFontSize',12);
+ set(0,'DefaultTextFontSize',12);
+ set(0,'DefaultLineLineWidth',1);
+ set(0,'DefaultFigurePaperType','a4letter');
+\end{verbatim}
+Grafiken, welche als \verb".eps" Datei gespeichert sind, können in CorelDRAW als Postscript Interpreted importiert
+werden und weiter mit CorelDRAW bearbeitet werden (Formeln zufügen usw.).
+
+\section{Formeln}
+Vektorgrößen schreibt man in der Regel mit kleinen fetten lateinischen Buchstaben, z.B.\ $\vx$, $\vy$, $\vz$, und manchmal mit kleinen fetten griechischen Buchstaben, z.B.\ $\val$, $\vbe$, $\vga$. Matrixgrößen schreibt man in der Regel mit großen fetten lateinischen Buchstaben, z.B.\ $\vA$, $\vB$, $\vC$. Nur in Einzelfällen weicht man von
+diesen Regeln ab um die übliche Notation der Klassischen Mechanik zu respektieren. Der Spinsatz, zum Beispiel, wird in der Vorlesung Technische Mechanik~3 als
+\begin{equation}\label{spinsatz}
+ \dot{\vN}_S = \vTh_S\,\vPs + \vOm\times\vTh_S\,\vOm =
+ \vM_S^\mathrm{a}
+\end{equation}
+geschrieben. Koordinatensysteme werden geschrieben als $(O, \ve_x^I, \ve_y^I, \ve_z^I)$ und Matrizen beispielsweise als
+\begin{equation}
+ _K\vTh_S = \begin{pmatrix}
+              A & D & E\\
+              D & B & F\\
+              E & F & C
+            \end{pmatrix}.
+\end{equation}
+Formeln sind mit den Macros in \verb"def.tex" zu erstellen. Nach Bedarf können Macros hinzugefügt werden.
+
+\section{Literatur}
+Das Literaturverzeichnis ist mit Bib\TeX~zu erstellen. Die Vorlage \verb"literatur.bib" enthält schon einige Beispiele, z.B.\ \cite{Glocker1995,Glocker1998b,Glocker2000,Glocker2001RS,Glocker2005,Glocker2006}. JabRef ist ein angenehmes und frei verfügbares Programm um \verb".bib"-Dateien zu erstellen und eine Literaturdatenbank aufzubauen.

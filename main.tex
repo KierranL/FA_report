@@ -1,0 +1,30 @@
+\input{settings/settings}
+
+\begin{document}
+	
+	\pagenumbering{roman}
+
+   \begin{titlepage}
+		\include{chapters/titlepage}
+   \end{titlepage}
+
+   \include{chapters/vorwort}
+   \include{chapters/zusammenfassung}
+
+   \tableofcontents
+
+   \cleardoublepage\pagenumbering{arabic}
+
+   \include{chapters/einleitung}
+   \include{chapters/arbeitsplatz}
+   \include{chapters/bericht}
+   \include{chapters/zumschluss}
+   
+   
+   \bibliographystyle{acm}
+	 \addcontentsline{toc}{chapter}{\bibname}
+   \bibliography{literature/literature}
+
+
+	\include{chapters/eigenstaendigkeitserklaerung}
+\end{document}
