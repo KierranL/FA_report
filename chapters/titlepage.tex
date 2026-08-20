@@ -1,54 +1,58 @@
-% Platzieren des Unilogos und des Institutslogos
+% Title page based on the IFT guideline template (page 24)
 \tikzexternaldisable
 \begin{tikzpicture}[remember picture, overlay]
-	\node [anchor=north west, shift={(24mm,-32mm)}] (label) 
-			at (current page.north west) 
-			{\includegraphics[width=60mm]{graphics/unilogo.eps}};
-	\node [anchor=north west, shift={(120mm,-33mm)}] (label) 
-			at (current page.north west) 
-			{\includegraphics[height=10mm]{graphics/logo_inm_deutsch.eps}};	
-\end{tikzpicture}	
+    \node[anchor=north west, shift={(24mm,-18mm)}]
+        at (current page.north west)
+        {\includegraphics[width=55mm]{graphics/LOGO_IFT_Stuttgart.jpg}};
+    \node[anchor=north east, shift={(-24mm,-18mm)}]
+        at (current page.north east)
+        {\includegraphics[width=28mm]{graphics/IFT.png}};
+\end{tikzpicture}
 \tikzexternalenable
 
-\vspace*{20mm}
-
-% Serifenlose Schrift
 \sffamily
-
-
-\begin{center}
-    \LARGE
-    Masterarbeit\\
-    Sommersemester 2015
-\end{center}
-
-\vspace{15mm}
+\vspace*{24mm}
 
 \begin{center}
-    \Huge
+    \fontsize{12pt}{14pt}\selectfont
+    Universität Stuttgart\\
+    Fakultät Konstruktions-, Produktions- und Fahrzeugtechnik\\
+    Institut für Fördertechnik und Logistik
+
+    \vspace{28mm}
+
+    \fontsize{17.28pt}{20.7pt}\selectfont
     \bfseries
-    Vorlage für studentische Arbeiten am Institut für Nichtlineare Mechanik
-\end{center}
+    Verspätungsorientiertes Deep Reinforcement Learning\\
+    für dynamische Auslagerung und Umlagerung in\\
+    mehrfachtiefen Lagersystemen
 
+    \vspace{3mm}
+    \makebox[\textwidth][c]{\rule{160mm}{0.4pt}}
+    \vspace{3mm}
 
-\vspace{15mm}
+    Tardiness-Oriented Deep Reinforcement Learning\\
+    for Dynamic Retrieval and Relocation in\\
+    Multi-Deep Storage Systems
 
-\mdseries
-\LARGE
-\begin{center}
-  Simon R. Eugster \\
-  Tom Winandy
+    \vspace{8mm}
+
+    \mdseries
+    \fontsize{12pt}{14pt}\selectfont
+    Research Thesis\\[1mm]
+    25 July 2026
 \end{center}
 
 \vfill
 
-\large
+\fontsize{12pt}{14pt}\selectfont
 \noindent
-\begin{tabular}[b]{ll}
-  Betreuer:
-  & MSc T. Winandy \\
-  & Dr. S. R. Eugster\\
-  & Prof. Dr. R. I. Leine
+\hspace*{20mm}%
+\begin{tabular}{@{}ll@{}}
+    Author:     & Zhi Li\\
+    Mat.-Nr.:   & 3566295\\[4mm]
+    Examiner:   & \\
+    Supervisor: & Funing Li
 \end{tabular}
-\hfill November 2017
 
+\vspace*{18mm}

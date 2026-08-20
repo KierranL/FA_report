@@ -1,27 +1,34 @@
+\documentclass[
+    11pt,
+    a4paper,
+    oneside,
+    openany,
+    % draft
+]{report}
+
 \input{settings/settings}
 
 \begin{document}
-	
+
 	\pagenumbering{roman}
 
    \begin{titlepage}
 		\include{chapters/titlepage}
    \end{titlepage}
+	\setcounter{page}{2}
 
-   \include{chapters/vorwort}
-   \include{chapters/zusammenfassung}
-
+   \include{chapters/Preface}
    \tableofcontents
 
    \cleardoublepage\pagenumbering{arabic}
 
-   \include{chapters/einleitung}
-   \include{chapters/arbeitsplatz}
-   \include{chapters/bericht}
-   \include{chapters/zumschluss}
+   \include{chapters/introduction}
+   \include{chapters/related_work}
+   \include{chapters/problem_description}
+   \include{chapters/Proposed_approach}
    
    
-   \bibliographystyle{acm}
+   \bibliographystyle{unsrt}
 	 \addcontentsline{toc}{chapter}{\bibname}
    \bibliography{literature/literature}
 
